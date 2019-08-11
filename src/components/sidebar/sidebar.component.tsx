@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import { RenderSidebar } from './sidebar_jsx';
 
-export class Home extends Component {
+export class Sidebar extends Component {
     constructor(props: any) {
         super(props);
 
@@ -8,10 +9,6 @@ export class Home extends Component {
     }
 
     render() {
-        return (
-            <div>
-                Hello!
-            </div>
-        );
+        return RenderSidebar(this.state);
     }
 }

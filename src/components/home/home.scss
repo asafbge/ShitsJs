@@ -1,0 +1,17 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    .sidebar-container {
+        background: black;
+        flex-basis: 150px;
+        height: 100%;
+    }
+
+    .content {
+        background: blue;
+        height: 100%;
+        flex:1;
+    }
+}
