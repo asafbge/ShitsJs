@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import { Route, BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
 import {Sidebar} from './components/sidebar/sidebar.component'
 import * as serviceWorker from './serviceWorker';
@@ -11,11 +11,12 @@ const routing = (
     <Router>
         <div className="app-container">
             <div className="sidebar-container">
-                <Sidebar />
+                <Sidebar/>
             </div>
             <div className="content">
                 <Route exact path="/" component={HomeComponent} />
-                <Route exact path="/profiles" component={ProfilesComponent} />
+                <Route path="/profiles" component={ProfilesComponent} />
+                <Route path="/rooms" component={ProfilesComponent} />
             </div>
         </div>
     </Router>

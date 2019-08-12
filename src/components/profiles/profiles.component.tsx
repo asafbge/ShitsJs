@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { RenderProfiles } from './profiles_jsx';
 
 export class ProfilesComponent extends Component {
     constructor(props: any) {
@@ -9,6 +8,10 @@ export class ProfilesComponent extends Component {
     }
 
     render() {
-        return RenderProfiles(this.state);
+        return (
+        <div>
+            Profiles
+        </div>
+        );
     }
 }
