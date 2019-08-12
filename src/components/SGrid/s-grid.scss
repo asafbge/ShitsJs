@@ -1,0 +1,27 @@
+.s-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-left:1px solid black;
+
+    .s-grid-col {
+        flex-basis: 200px;
+        border-right: 1px solid black;
+        display: flex;
+        flex-direction: column;
+
+        .s-grid-col-header {
+            font-weight: bold;
+            font-size: 18px;
+            background-color:lightgray;
+            border-top:1px solid black;
+        }
+
+        .s-grid-cell {
+            height: 50px;
+            line-height: 50px;
+            padding-left: 10px;
+            border-bottom: 1px solid black;
+        }
+    }
+}

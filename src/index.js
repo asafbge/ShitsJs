@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
+import './view.scss';
 import {Sidebar} from './components/sidebar/sidebar.component'
 import * as serviceWorker from './serviceWorker';
 import { HomeComponent } from './components/home/home.component';

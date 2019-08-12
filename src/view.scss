@@ -1,0 +1,25 @@
+.view {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+
+    .view-header {
+        flex:1;
+        font-size: 24px;
+        line-height: 100%;
+        display:flex;
+        align-items: center;
+        background-color:rgba(0,0,255,0.05);
+        width: calc(100% - 100px);
+        padding-left: 100px;
+    }
+
+    .view-content {
+        flex:4;
+        padding: 10px;
+        margin-top: -15px;
+        width: 1000px;
+    }
+}

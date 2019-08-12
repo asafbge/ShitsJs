@@ -1,16 +1,35 @@
 import React, { Component } from 'react'
+import './profiles.scss';
+import { SGrid, SGridColumn } from '../SGrid/s-grid.component';
 
-export class ProfilesComponent extends Component {
+interface IProfilesState {
+    columns: Array<SGridColumn>
+}
+
+export class ProfilesComponent extends Component<{}, IProfilesState> {
     constructor(props: any) {
         super(props);
 
-        this.state = {};
+        this.state = {
+            columns: [{
+                header: {text:"Name"},
+                cellInfos: [{text:"Asaf Benjaminov"},{text:"Asaf Benjaminov"}]
+            },{
+                header: {text:"Professions"},
+                cellInfos: [{text:"Asaf Benjaminov"},{text:"Asaf Benjaminov"}]
+            }]
+        };
     }
 
     render() {
         return (
-        <div>
-            Profiles
+        <div className="profiles view">
+            <div className="view-header">
+                Profiles
+            </div>
+            <div className="view-content">
+                <SGrid columns={this.state.columns}/>
+            </div>
         </div>
         );
     }

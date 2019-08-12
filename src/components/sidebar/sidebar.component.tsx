@@ -21,7 +21,7 @@ export class Sidebar extends Component{
         super(props);
 
         this.state = {
-            items: [{ text: "Home",link: "/", isSelected : true }, { text: "Profiles",link: "/profiles", isSelected : false }, { text: "Rooms",link: "/rooms" }],
+            items: [{ text: "Home",link: "/", isSelected : false }, { text: "Profiles",link: "/profiles", isSelected : true }, { text: "Rooms",link: "/rooms" }],
             selectedItem: new SidebarItem("","")
         }
         this.state.selectedItem = this.state.items[0];
@@ -41,7 +41,7 @@ export class Sidebar extends Component{
 
     itemClicked(item: SidebarItem) {
         if(this.state.selectedItem == item) {return;}
-        
+
         item.isSelected = true;
         this.state.selectedItem.isSelected = false;
         this.state.selectedItem = item;
