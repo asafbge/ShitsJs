@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import {RenderHome} from './home_jsx';
+import { RenderProfiles } from './profiles_jsx';
 
-export class HomeComponent extends Component {
+export class ProfilesComponent extends Component {
     constructor(props: any) {
         super(props);
 
@@ -9,6 +9,6 @@ export class HomeComponent extends Component {
     }
 
     render() {
-        return RenderHome(this.state);
+        return RenderProfiles(this.state);
     }
 }

@@ -1,12 +1,8 @@
 import React, { Component } from 'react'
-import { RenderSidebar } from './sidebar_jsx';
+import { RenderSidebar, SidebarState, SidebarItem } from './sidebar_jsx';
 
-export class Sidebar extends Component {
-    constructor(props: any) {
-        super(props);
-
-        this.state = {};
-    }
+export class Sidebar extends React.PureComponent<any, SidebarState> {
+    readonly state: SidebarState = { items: [{ text: "Profiles",link: "/profiles", isSelected : true }, { text: "Rooms",link: "/rooms" }] }
 
     render() {
         return RenderSidebar(this.state);
